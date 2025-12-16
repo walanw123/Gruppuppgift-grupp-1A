@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Montserrat', Arial, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #764ba2 100%);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -50,14 +50,49 @@ header .header-content {
     color: #333;
     text-decoration: none;
     font-weight: 700;
-    padding: 8px 12px;
-    border-radius: 8px;
-    transition: background .15s;
+    padding: 12px 20px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+    /* All easing här = gäller både in och ut */
+    transition:
+      background 0.5s ease-in-out,
+      color 0.5s ease-in-out,
+      transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), /* lite mer mjuk */
+      box-shadow 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg,
+        transparent,
+        rgba(255,255,255,0.4),
+        transparent);
+    transition: left 0.6s ease-in-out;
+}
+
+.nav-link:hover::before {
+    left: 120%;
 }
 
 .nav-link:hover {
-    background: rgba(0,0,0,0.06);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    color: white;
+    transform: translateY(-4px) scale(1.05);
+    box-shadow:
+      0 10px 30px rgba(102, 126, 234, 0.6),
+      0 20px 60px rgba(118, 75, 162, 0.4),
+      inset 0 1px 0 rgba(255,255,255,0.3);
 }
+
 
 .logo {
     font-size: 36px;
@@ -73,23 +108,25 @@ header .header-content {
 }
 
 .header-score {
-   
-    top: 1600px;
-    right: 160px;
-    background: rgba(255,255,255,0.98);
+    position: relative;
+    margin-left: 1300px;
+    background: white;
+    top: 100%;
     padding: 8px 12px;
     border-radius: 10px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     z-index: 5;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
     font-weight: 700;
     margin-bottom: 20px;
+    font-size: 20px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1)   ;
 }
 
+
 .small-btn {
-    background: linear-gradient(180deg, #ff8a80, #ff5252);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     border: none;
     padding: 6px 10px;
@@ -97,8 +134,22 @@ header .header-content {
     cursor: pointer;
     font-weight: 600;
     box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-    transition: transform .08s;
+    font-size: 20px;
+
+    /* Viktigt: transition här */
+    transition:
+      background 0.35s ease-in-out,
+      transform 0.35s cubic-bezier(0.19, 1, 0.22, 1),
+      box-shadow 0.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
+
+.small-btn:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+    /* Lite mörkare gradient vid hover */
+    background: linear-gradient(135deg, #5a6fe0 0%, #693c9a 100%);
+}
+
 
 .score-display {
     display: flex;
@@ -169,23 +220,45 @@ main {
     color: #fff;
     border: none;
     cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+
+    /* Smooth in & ut */
+    transition:
+      transform 0.45s cubic-bezier(0.19, 1, 0.22, 1),
+      box-shadow 0.45s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* Lägg perspektiv på containern runt knapparna */
+.categories-wrapper {
+    display: flex;
+    gap: 16px;
+    perspective: 900px;
 }
 
 .category-btn .emoji {
     font-size: 48px;
+    transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .category-btn:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    transform: translateY(-8px) rotateX(8deg) rotateY(-6deg) scale(1.04);
+    box-shadow:
+      0 18px 40px rgba(0, 0, 0, 0.35);
 }
 
+.category-btn:hover .emoji {
+    transform: translateY(-4px) scale(1.1);
+}
+
+/* Färger */
 .category-btn:nth-child(1) { background: #e21b3c; }
 .category-btn:nth-child(2) { background: #1368ce; }
 .category-btn:nth-child(3) { background: #d89e00; }
-.category-btn:nth-child(4) { background: #890c4a; }
+.category-btn:nth-child(4) { background: #890c6a; }
+.category-btn:nth-child(5) { background: #320a53; }
 
-/* liten badge under varje kategori som visar poäng */
+/* badge under varje kategori */
 .category-score {
     font-size: 13px;
     color: #222;
@@ -197,6 +270,9 @@ main {
     text-align: center;
     font-weight: 700;
 }
+
+
+
 
 /* QUIZ SECTION */
 .quiz-section {
@@ -236,29 +312,66 @@ main {
     border-radius: 15px;
     font-size: 18px;
     font-weight: bold;
-    color: white;
+    color: rgb(0, 0, 0);
     cursor: pointer;
-    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    border: #000000 2px solid;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+    /* Smooth in & ut */
+    transition:
+      transform 0.25s cubic-bezier(0.19, 1, 0.22, 1),
+      box-shadow 0.25s cubic-bezier(0.19, 1, 0.22, 1),
+      filter 0.25s ease-out;
+    
 }
 
-.answer-btn:nth-child(1) { background: #e21b3c; }
-.answer-btn:nth-child(2) { background: #1368ce; }
-.answer-btn:nth-child(3) { background: #d89e00; }
-.answer-btn:nth-child(4) { background: #890c6a; }
+/* Grundfärger */
+.answer-btn:nth-child(1) { background: #fdfdfd; }
+.answer-btn:nth-child(2) { background: #fdfdfd; }
+.answer-btn:nth-child(3) { background: #fdfdfd; }
+.answer-btn:nth-child(4) { background: #fdfdfd; }
 
+/* Glow + liten lyft vid hover */
 .answer-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow:
+      0 12px 25px rgba(0, 0, 0, 0.35);
+    filter: brightness(1.08);
 }
 
+/* Liten “press” vid aktivt klick */
+.answer-btn:active {
+    transform: translateY(1px) scale(0.99);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+/* Korrekt – grön puls */
 .answer-btn.correct {
     background: #26890c !important;
-    animation: pulse 0.5s;
+    animation: pulse-correct 0.6s ease-out;
 }
 
+/* Fel – skak-anim */
 .answer-btn.incorrect {
-    background: #666 !important;
-    animation: shake 0.5s;
+    background: #ff0000 !important;
+    animation: shake-answer 0.5s cubic-bezier(.36,.07,.19,.97);
+}
+
+/* Pulse för korrekt */
+@keyframes pulse-correct {
+    0%   { transform: scale(1); box-shadow: 0 0 0 0 rgba(38, 137, 12, 0.7); }
+    60%  { transform: scale(1.04); box-shadow: 0 0 0 12px rgba(38, 137, 12, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(38, 137, 12, 0); }
+}
+
+/* Shake för fel */
+@keyframes shake-answer {
+    10%, 90% { transform: translateX(-2px); }
+    20%, 80% { transform: translateX(4px); }
+    30%, 50%, 70% { transform: translateX(-6px); }
+    40%, 60% { transform: translateX(6px); }
 }
 
 .answer-btn:disabled {

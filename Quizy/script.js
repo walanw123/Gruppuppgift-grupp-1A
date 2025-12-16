@@ -86,6 +86,29 @@ const quizData = {
         { q: "Vem grundade det Romerska riket?", a: ["Romulus", "Julius Caesar", "Augustus", "Nero"], correct: 0 },
         { q: "Vilket år började den industriella revolutionen?", a: ["1760-talet", "1800-talet", "1700-talet", "1850-talet"], correct: 0 },
         { q: "Vem uppfann telefonen?", a: ["Alexander Graham Bell", "Thomas Edison", "Nikola Tesla", "Benjamin Franklin"], correct: 0 }
+    ],
+
+    Städer: [
+        { q: "Vilken stad är känd som 'The Big Apple'?", a: ["New York", "Los Angeles", "Chicago", "Miami"], correct: 0 },
+        { q: "Vilken stad är huvudstad i Frankrike?", a: ["Paris", "Lyon", "Marseille", "Nice"], correct: 0 }, 
+        { q: "Vilken stad är känd för sin lutande torn?", a: ["Pisa", "Florens", "Rom", "Venedig"], correct: 0 },
+        { q: "Vilken stad är huvudstad i Japan?", a: ["Tokyo", "Osaka", "Kyoto", "Nagoya"], correct: 0 },
+        { q: "Vilken stad är känd som 'City of Angels'?", a: ["Los Angeles", "San Francisco", "Seattle", "San Diego"], correct: 0 },
+        { q: "Vilken stad är huvudstad i Australien?", a: ["Canberra", "Sydney", "Melbourne", "Brisbane"], correct: 0 },
+        { q: "Vilken stad är känd för sin kanaler och gondoler?", a: ["Venedig", "Amsterdam", "Brugge", "Stockholm"], correct: 0 },
+        { q: "Vilken stad är huvudstad i Egypten?", a: ["Kairo", "Alexandria", "Giza", "Luxor"], correct: 0 },
+        { q: "Vilken stad är känd som 'The Eternal City'?", a: ["Rom", "Aten", "Istanbul", "Jerusalem"], correct: 0 },  
+        { q: "Vilken stad är huvudstad i Kanada?", a: ["Ottawa", "Toronto", "Vancouver", "Montreal"], correct: 0 },
+        { q: "Vilken stad är känd för sin skyline med skyskrapor som Willis Tower?", a: ["Chicago", "New York", "Houston", "Miami"], correct: 0 },
+        { q: "Vilken stad är huvudstad i Brasilien?", a: ["Brasília", "Rio de Janeiro", "São Paulo", "Salvador"], correct: 0 },
+        { q: "Vilken stad är känd som 'The City of Light'?", a: ["Paris", "London", "Berlin", "Madrid"], correct: 0 },
+        { q: "Vilken stad är huvudstad i Indien?", a: ["New Delhi", "Mumbai", "Bangalore", "Chennai"], correct: 0 },
+        { q: "Vilken stad är känd för sin operahus och Harbour Bridge?", a: ["Sydney", "Melbourne", "Brisbane", "Perth"], correct: 0 },
+        { q: "Vilken stad är huvudstad i Tyskland?", a: ["Berlin", "München", "Hamburg", "Frankfurt"], correct: 0 },
+        { q: "Vilken stad är känd som 'The Windy City'?", a: ["Chicago", "New York", "Boston", "Seattle"], correct: 0 },
+        { q: "Vilken stad är huvudstad i Ryssland?", a: ["Moskva", "Sankt Petersburg", "Novosibirsk", "Jekaterinburg"], correct: 0 },
+        { q: "Vilken stad är känd för sin festival La Tomatina?", a: ["Buñol", "Madrid", "Barcelona", "Valencia"], correct: 0 },
+        { q: "Vilken stad är huvudstad i Italien?", a: ["Rom", "Milano", "Neapel", "Turin"], correct: 0 }
     ]
 };
 
