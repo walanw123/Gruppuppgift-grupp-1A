@@ -109,6 +109,23 @@ const quizData = {
         { q: "Vilken stad är huvudstad i Ryssland?", a: ["Moskva", "Sankt Petersburg", "Novosibirsk", "Jekaterinburg"], correct: 0 },
         { q: "Vilken stad är känd för sin festival La Tomatina?", a: ["Buñol", "Madrid", "Barcelona", "Valencia"], correct: 0 },
         { q: "Vilken stad är huvudstad i Italien?", a: ["Rom", "Milano", "Neapel", "Turin"], correct: 0 }
+    ],
+
+    Funfacts: [
+
+        {q: "Sant eller falskt: Coca-Cola var ursprungligen grön.", a: ["Falskt", "Sant"], correct: 0},
+        {q: "Vad är det högsta antalet glasskulor som någonsin balanserats på en enda strut?", a: ["125", "87", "99", "100"], correct: 0},
+        {q: "Vilket land konsumerar mest choklad per capita?", a: ["Schweiz", "Tyskland", "Belgien", "USA"], correct: 0},
+        {q: "Vad var den första maten som åts i rymden?", a: ["Äppelmos", "Smörgås", "Godis", "Jordnötter"], correct: 0},
+        {q: "Vilket djur kan sova i tre år?", a: ["Snigel", "Sengångare", "Björn", "Sköldpadda"], correct: 0},
+        {q: "Vilken färg har en isbjörns hud under pälsen?", a: ["Svart", "Vit", "Rosa", "Brun"], correct: 0},
+        {q: "Det är olagligt att namnge en gris Napoleon i Frankrike.", a: ["Falskt", "Sant", "Endast i vissa regioner", "Endast på söndagar"], correct: 0},
+        {q: "Vad är rekordet för längst tid att hålla andan under vatten?", a: ["24 minuter", "10 minuter", "15 minuter", "29 minuter"], correct: 0},
+        {q: "I vilket land är det olagligt att tugga tuggummi offentligt?", a: ["Singapore", "Malaysia", "Thailand", "Vietnam"], correct: 0},
+        {q: "Vilken frukt är förbjuden på många hotell på grund av sin starka lukt?", a: ["Durian", "Mango", "Jackfrukt", "Drakfrukt"], correct: 0},
+        {q: "Vad är den snabbaste tiden någon har ätit en 12-tums pizza?", a: ["23 sekunder", "10 sekunder", "53 sekunder", "1 minut"], correct: 0},
+        {q: "Vilket land krediteras med att ha uppfunnit glass?", a: ["Kina", "Italien", "Frankrike", "Marocko"], correct: 0},
+        {q: "Du får inte använda en dammsugare efter kl. 22.00 i Victoria, Australien.", a: ["Sant", "Falskt", "Endast på helger", "Endast i lägenheter"], correct: 0}
     ]
 };
 
