@@ -205,9 +205,10 @@ main {
 
 .categories {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .category-btn {
@@ -215,13 +216,14 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    padding: 16px;
+    padding: 100px;
     border-radius: 12px;
     color: #fff;
     border: none;
     cursor: pointer;
     position: relative;
     transform-style: preserve-3d;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
 
     /* Smooth in & ut */
     transition:
@@ -232,12 +234,16 @@ main {
 /* Lägg perspektiv på containern runt knapparna */
 .categories-wrapper {
     display: flex;
-    gap: 16px;
+    gap: 1600px;
     perspective: 900px;
 }
 
 .category-btn .emoji {
-    font-size: 48px;
+    font-size: 100px;
+    transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.category-btn span {
+    font-size: 50px;
     transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
@@ -257,10 +263,11 @@ main {
 .category-btn:nth-child(3) { background: #d89e00; }
 .category-btn:nth-child(4) { background: #890c6a; }
 .category-btn:nth-child(5) { background: #320a53; }
+.category-btn:nth-child(6) { background: #ff6f00; }
 
 /* badge under varje kategori */
 .category-score {
-    font-size: 13px;
+    font-size: 30px;
     color: #222;
     background: rgba(255,255,255,0.9);
     padding: 4px 8px;
