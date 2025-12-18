@@ -306,6 +306,31 @@ main {
     line-height: 1.4;
 }
 
+.category-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    text-align: center;
+    padding: 40px 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);  /* Smooth färgbyte */
+}
+
+
+
+
+.category-emoji {
+    font-size: 36px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+
 .answers {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
