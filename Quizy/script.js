@@ -65,30 +65,8 @@ const quizData = {
         { q: "Vad står loggan 'LV' för?", a: ["Louis Vuitton", "Las Vegas", "La Vida", "Luxury Value"], correct: 0 },
         { q: "Vilket företag skapade Windows?", a: ["Microsoft", "Apple", "IBM", "Linux"], correct: 0 }
     ],
-    historia: [
-        { q: "Vilket år slutade andra världskriget?", a: ["1945", "1944", "1946", "1943"], correct: 0 },
-        { q: "Vem var Sveriges första kvinnliga statsminister?", a: ["Magdalena Andersson", "Anna Lindh", "Mona Sahlin", "Margot Wallström"], correct: 0 },
-        { q: "Vilket år föll Berlinmuren?", a: ["1989", "1990", "1988", "1987"], correct: 0 },
-        { q: "Vem upptäckte Amerika?", a: ["Christopher Columbus", "Leif Eriksson", "Marco Polo", "Ferdinand Magellan"], correct: 0 },
-        { q: "Vilket år landade människan på månen?", a: ["1969", "1968", "1970", "1971"], correct: 0 },
-        { q: "Vem var USAs första president?", a: ["George Washington", "Thomas Jefferson", "John Adams", "Benjamin Franklin"], correct: 0 },
-        { q: "Vilket år startade första världskriget?", a: ["1914", "1915", "1913", "1916"], correct: 0 },
-        { q: "Vem målade Mona Lisa?", a: ["Leonardo da Vinci", "Michelangelo", "Raphael", "Donatello"], correct: 0 },
-        { q: "Vilket år grundades Sverige som nation?", a: ["Cirka 1000-talet", "500-talet", "1500-talet", "1200-talet"], correct: 0 },
-        { q: "Vem var kung under slaget vid Lützen 1632?", a: ["Gustav II Adolf", "Karl XII", "Gustav Vasa", "Karl XIV Johan"], correct: 0 },
-        { q: "Vilket år blev Sverige medlem i EU?", a: ["1995", "1992", "1998", "2000"], correct: 0 },
-        { q: "Vem var Tysklands ledare under WW2?", a: ["Adolf Hitler", "Joseph Stalin", "Benito Mussolini", "Winston Churchill"], correct: 0 },
-        { q: "Vilket år hände franska revolutionen?", a: ["1789", "1790", "1788", "1791"], correct: 0 },
-        { q: "Vem skrev 'Romeo och Julia'?", a: ["William Shakespeare", "Charles Dickens", "Mark Twain", "Oscar Wilde"], correct: 0 },
-        { q: "Vilket år sjönk Titanic?", a: ["1912", "1910", "1914", "1915"], correct: 0 },
-        { q: "Vem var Egyptens drottning cirka 50 f.Kr?", a: ["Kleopatra", "Nefertiti", "Hatshepsut", "Isis"], correct: 0 },
-        { q: "Vilket år avskaffades slaveriet i USA?", a: ["1865", "1860", "1870", "1863"], correct: 0 },
-        { q: "Vem grundade det Romerska riket?", a: ["Romulus", "Julius Caesar", "Augustus", "Nero"], correct: 0 },
-        { q: "Vilket år började den industriella revolutionen?", a: ["1760-talet", "1800-talet", "1700-talet", "1850-talet"], correct: 0 },
-        { q: "Vem uppfann telefonen?", a: ["Alexander Graham Bell", "Thomas Edison", "Nikola Tesla", "Benjamin Franklin"], correct: 0 }
-    ],
 
-    Städer: [
+    städer: [
         { q: "Vilken stad är känd som 'The Big Apple'?", a: ["New York", "Los Angeles", "Chicago", "Miami"], correct: 0 },
         { q: "Vilken stad är huvudstad i Frankrike?", a: ["Paris", "Lyon", "Marseille", "Nice"], correct: 0 }, 
         { q: "Vilken stad är känd för sin lutande torn?", a: ["Pisa", "Florens", "Rom", "Venedig"], correct: 0 },
@@ -110,9 +88,7 @@ const quizData = {
         { q: "Vilken stad är känd för sin festival La Tomatina?", a: ["Buñol", "Madrid", "Barcelona", "Valencia"], correct: 0 },
         { q: "Vilken stad är huvudstad i Italien?", a: ["Rom", "Milano", "Neapel", "Turin"], correct: 0 }
     ],
-
-    Funfacts: [
-
+    funfacts: [
         {q: "Sant eller falskt: Coca-Cola var ursprungligen grön.", a: ["Falskt", "Sant"], correct: 0},
         {q: "Vad är det högsta antalet glasskulor som någonsin balanserats på en enda strut?", a: ["125", "87", "99", "100"], correct: 0},
         {q: "Vilket land konsumerar mest choklad per capita?", a: ["Schweiz", "Tyskland", "Belgien", "USA"], correct: 0},
@@ -126,13 +102,47 @@ const quizData = {
         {q: "Vad är den snabbaste tiden någon har ätit en 12-tums pizza?", a: ["23 sekunder", "10 sekunder", "53 sekunder", "1 minut"], correct: 0},
         {q: "Vilket land krediteras med att ha uppfunnit glass?", a: ["Kina", "Italien", "Frankrike", "Marocko"], correct: 0},
         {q: "Du får inte använda en dammsugare efter kl. 22.00 i Victoria, Australien.", a: ["Sant", "Falskt", "Endast på helger", "Endast i lägenheter"], correct: 0}
+    ],
+    historia: [
+        { q: "Vilket år slutade andra världskriget?", a: ["1945", "1944", "1946", "1943"], correct: 0 },
+        { q: "Vem var Sveriges första kvinnliga statsminister?", a: ["Magdalena Andersson", "Anna Lindh", "Mona Sahlin", "Margot Wallström"], correct: 0 },
+        { q: "Vilket år föll Berlinmuren?", a: ["1989", "1990", "1988", "1987"], correct: 0 },
+        { q: "Vem upptäckte Amerika?", a: ["Christopher Columbus", "Leif Eriksson", "Marco Polo", "Ferdinand Magellan"], correct: 0 },
+        { q: "Vilket år landade människan på månen?", a: ["1969", "1968", "1970", "1971"], correct: 0 },
+        { q: "Vem var USAs första president?", a: ["George Washington", "Thomas Jefferson", "John Adams", "Benjamin Franklin"], correct: 0 },
+        { q: "Vilket år startade första världskriget?", a: ["1914", "1915", "1913", "1916"], correct: 0 },
+        { q: "Vem målade Mona Lisa?", a: ["Leonardo da Vinci", "Michelangelo", "Raphael", "Donatello"], correct: 0 },
+        { q: "Vilket år grundades Sverige som nation?", a: ["Cirka 1000-talet", "500-talet", "1500-talet", "1200-talet"], correct: 0 },
+        { q: "Vem var kung under slaget vid Lützen 1632?", a: ["Gustav II Adolf", "Karl XII", "Gustav Vasa", "Karl XIV Johan"], correct: 0 },
+        { q: "Vilket år blev Sverige medlem i EU?", a: ["1995", "1992", "1998", "2000"], correct: 0 },
+        { q: "Vem var Tysklands ledare under WW2?", a: ["Adolf Hitler", "Joseph Stalin", "Benito Mussolini", "Winston Churchill"], correct: 0 },
+        { q: "Vilket år hände franska revolutionen?", a: ["1789", "1790", "1788", "1791"], correct: 0 },
+        { q: "Vem skrev 'Romeo och Julia'?", a: ["William Shakespeare", "Charles Dickens", "Mark Twain", "Oscar Wilde"], correct: 0 },
+        { q: "Vilket år sjönk Titanic?", a: ["1912", "1910", "1914", "1915"], correct: 0 },
+        { q: "Vem var Egyptens drottning cirka 50 f.Kr?", a: ["Kleopatra", "Nefertiti", "Hatshepsut", "Isis"], correct: 0 },
+        { q: "Vilket år avskaffades slaveriet i USA?", a: ["1865", "1860", "1870", "1863"], correct: 0 },
+        { q: "Vem grundade det Romerska riket?", a: ["Romulus", "Julius Caesar", "Augustus", "Nero"], correct: 0 },
+        { q: "Vilket år började den industriella revolutionen?", a: ["1760-talet", "1800-talet", "1700-talet", "1850-talet"], correct: 0 },
+        { q: "Vem uppfann telefonen?", a: ["Alexander Graham Bell", "Thomas Edison", "Nikola Tesla", "Benjamin Franklin"], correct: 0 }
     ]
+    
 };
+
+const categoryConfig = {
+    'geografi': { emoji: '🌍', name: 'GEOGRAFI', color: '#e21b3c' },      // Röd
+    'bilar': { emoji: '🚗', name: 'BILAR', color: '#1368ce' },            // Blå
+    'marken': { emoji: '🏷️', name: 'MÄRKEN', color: '#d89e00' },         // Gul
+    'historia': { emoji: '📚', name: 'HISTORIA', color: '#890c6a' },      // Lila
+    'städer': { emoji: '🏙️', name: 'STÄDER', color: '#320a53' },         // Mörk lila
+    'funfacts': { emoji: '💡', name: 'FUNFACTS', color: '#ff6f00' }       // Orange
+};
+
+
 
 let currentQuiz = [];
 let currentQuestion = 0;
 let score = 0;
-let totalScore = parseInt(localStorage.getItem('totalScore')) || 0;
+let totalScore = parseInt(localStorage.getItem('totalScore')) || 0 ;
 // ersätt direkt DOM-skrivning med säkert uppdateringsanrop
 // document.getElementById('totalScore').textContent = totalScore;
 
@@ -141,7 +151,7 @@ function updateTotalScoreDisplays() {
     const header = document.getElementById('totalScoreHeader');
     const result = document.getElementById('totalScoreResult');
     const old = document.getElementById('totalScore');
-    if (header) header.textContent = 'Dina poäng: ' + totalScore;
+    if (header) header.textContent = 'Dina poäng: ' + totalScore + '/20 Poäng';
     if (result) result.textContent = totalScore;
     if (old) old.textContent = totalScore;
 }
@@ -167,13 +177,33 @@ updateCategoryScoreDisplays(); // init
 
 function startQuiz(category) {
     currentQuiz = quizData[category];
-    currentCategory = category; // spara aktuell kategori
+    currentCategory = category;
     currentQuestion = 0;
     score = 0;
+
     document.getElementById('homeSection').style.display = 'none';
     document.getElementById('quizSection').style.display = 'block';
-    document.getElementById('resultSection').classList.add('hidden');
-    showQuestion();
+    document.getElementById('resultSection').classList.add('hidden'); 
+    
+    setTimeout(() => showQuestion(), 100);  // Vänta på DOM
+}
+
+   
+
+function updateCategoryDisplay(category) {
+    const config = categoryConfig[category];
+    if (config) {
+        const emojiEl = document.getElementById('categoryEmoji');
+        const nameEl = document.getElementById('categoryName');
+        const titleEl = document.getElementById('categoryTitle');
+        
+        if (emojiEl) emojiEl.textContent = config.emoji;
+        if (nameEl) nameEl.textContent = config.name;
+        if (titleEl && config.color) {
+            titleEl.style.background = config.color;
+            titleEl.style.boxShadow = `0 4px 15px ${config.color}40`;
+        }
+    }
 }
 
 // Hjälpfunktion: Fisher‑Yates shuffle
@@ -193,10 +223,14 @@ function showQuestion() {
         return;
     }
 
+    // UPPDATERA KATEGORI FÖRST
+    updateCategoryDisplay(currentCategory);
+    
     const question = currentQuiz[currentQuestion];
     document.getElementById('questionNumber').textContent = currentQuestion + 1;
     document.getElementById('questionText').textContent = question.q;
-
+    
+ 
     // skapa kopia av svaren, blanda och räkna ut nytt korrekt index
     const items = question.a.map((text, i) => ({ text, orig: i }));
     shuffleArray(items);
@@ -246,7 +280,7 @@ function checkAnswer(selected, correct) {
 function showResult() {
     document.getElementById('quizSection').style.display = 'none';
     document.getElementById('resultSection').classList.remove('hidden');
-    document.getElementById('finalScore').textContent = score;
+    document.getElementById('finalScore').textContent = score + '/ 20 Poäng';
     
     const resultMessage = document.getElementById('resultMessage');
     if (score === 20) {
