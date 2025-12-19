@@ -639,3 +639,30 @@ footer {
 
     /* valfritt: dölj poäng på små skärmar */
 }
+
+/* ABOUT US CSS */
+
+.content-container {
+    position: relative;
+    display: grid;
+    margin: 1rem 1rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    /* möjliggör absolut positionering av header-score */
+    padding-top: 56px;
+    /* ger plats för score-bubblan utan att täcka innehåll */
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    min-height: 600px;
+}
+
+.content-container p {
+    font-size: 2rem;
+
+}
+
+.content-container img {
+    width: 100%;
+}
