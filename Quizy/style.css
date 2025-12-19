@@ -642,6 +642,25 @@ footer {
 
 /* ABOUT US CSS */
 
+#title {
+    display: flex;
+    justify-content: center;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin: 1rem 1rem;
+}
+
+#title h1 {
+    font-weight: 1000;
+    font-size: 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .content-container {
     position: relative;
     display: grid;
