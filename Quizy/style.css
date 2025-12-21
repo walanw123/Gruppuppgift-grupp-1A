@@ -258,12 +258,12 @@ main {
 }
 
 /* Färger */
-.category-btn:nth-child(1) { background: #e21b3c; }
-.category-btn:nth-child(2) { background: #1368ce; }
-.category-btn:nth-child(3) { background: #d89e00; }
-.category-btn:nth-child(4) { background: #890c6a; }
-.category-btn:nth-child(5) { background: #320a53; }
-.category-btn:nth-child(6) { background: #ff6f00; }
+.category-btn:nth-child(1) { background: #F2AEBB; }
+.category-btn:nth-child(2) { background: #F5D3C4; }
+.category-btn:nth-child(3) { background: #A7AAE1; }
+.category-btn:nth-child(4) { background: #8097D5; }
+.category-btn:nth-child(5) { background: #FFDBB6; }
+.category-btn:nth-child(6) { background: #F7A5A5; }
 
 /* badge under varje kategori */
 .category-score {
