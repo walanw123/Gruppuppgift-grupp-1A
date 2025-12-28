@@ -13,14 +13,17 @@
     <!-- HEADER -->
     <header>
         <div class="header-content">
-            <nav class="nav-left">
-                <a href="#" class="nav-link" onclick="goHome(); return false;">Home</a>
-            </nav>
-
             <div class="logo">QUIZY</div>
 
             <nav class="nav-right">
-                <a href="#" class="nav-link" onclick="openAbout(); return false;">Om oss</a>
+                
+                <div class="dropdown">
+                    <a href="#" class="nav-link" onclick="openAbout(); return false;">Fler spel</a>
+                    <div class="content">
+                        <a href="#" >Frågesport</a>
+                        <a href="#" >Färgspel</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
