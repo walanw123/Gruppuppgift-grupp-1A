@@ -30,7 +30,8 @@ header .header-content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    position: relative; /* behåll för centrerad logo */
+    position: relative;
+    /* behåll för centrerad logo */
     display: flex;
     align-items: center;
 }
@@ -94,15 +95,16 @@ header .header-content {
     border-radius: 12px;
     position: relative;
     overflow: hidden;
-    background: rgba(255,255,255,0.9);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 
     /* All easing här = gäller både in och ut */
     transition:
-      background 0.5s ease-in-out,
-      color 0.5s ease-in-out,
-      transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), /* lite mer mjuk */
-      box-shadow 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        background 0.5s ease-in-out,
+        color 0.5s ease-in-out,
+        transform 0.5s cubic-bezier(0.19, 1, 0.22, 1),
+        /* lite mer mjuk */
+        box-shadow 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .nav-link::before {
@@ -113,9 +115,9 @@ header .header-content {
     width: 120%;
     height: 100%;
     background: linear-gradient(90deg,
-        transparent,
-        rgba(255,255,255,0.4),
-        transparent);
+            transparent,
+            rgba(255, 255, 255, 0.4),
+            transparent);
     transition: left 0.6s ease-in-out;
 }
 
@@ -128,9 +130,9 @@ header .header-content {
     color: white;
     transform: translateY(-4px) scale(1.05);
     box-shadow:
-      0 10px 30px rgba(102, 126, 234, 0.6),
-      0 20px 60px rgba(118, 75, 162, 0.4),
-      inset 0 1px 0 rgba(255,255,255,0.3);
+        0 10px 30px rgba(102, 126, 234, 0.6),
+        0 20px 60px rgba(118, 75, 162, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 
@@ -161,7 +163,7 @@ header .header-content {
     font-weight: 700;
     margin-bottom: 20px;
     font-size: 20px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1)   ;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -173,19 +175,19 @@ header .header-content {
     border-radius: 8px;
     cursor: pointer;
     font-weight: 600;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
     font-size: 20px;
 
     /* Viktigt: transition här */
     transition:
-      background 0.35s ease-in-out,
-      transform 0.35s cubic-bezier(0.19, 1, 0.22, 1),
-      box-shadow 0.35s cubic-bezier(0.19, 1, 0.22, 1);
+        background 0.35s ease-in-out,
+        transform 0.35s cubic-bezier(0.19, 1, 0.22, 1),
+        box-shadow 0.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .small-btn:hover {
     transform: translateY(-2px) scale(1.03);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
     /* Lite mörkare gradient vid hover */
     background: linear-gradient(135deg, #5a6fe0 0%, #693c9a 100%);
 }
@@ -210,15 +212,17 @@ header .header-content {
 /* MAIN CONTENT */
 main {
     flex: 1;
-    max-width: 1800px; 
+    max-width: 1800px;
     width: 100%;
     margin: 0 auto;
     padding: 40px 20px;
 }
 
 .content-card {
-    position: relative;         /* möjliggör absolut positionering av header-score */
-    padding-top: 56px;          /* ger plats för score-bubblan utan att täcka innehåll */
+    position: relative;
+    /* möjliggör absolut positionering av header-score */
+    padding-top: 56px;
+    /* ger plats för score-bubblan utan att täcka innehåll */
     background: white;
     border-radius: 20px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
@@ -263,12 +267,12 @@ main {
     cursor: pointer;
     position: relative;
     transform-style: preserve-3d;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
 
     /* Smooth in & ut */
     transition:
-      transform 0.45s cubic-bezier(0.19, 1, 0.22, 1),
-      box-shadow 0.45s cubic-bezier(0.19, 1, 0.22, 1);
+        transform 0.45s cubic-bezier(0.19, 1, 0.22, 1),
+        box-shadow 0.45s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 /* Lägg perspektiv på containern runt knapparna */
@@ -282,6 +286,7 @@ main {
     font-size: 100px;
     transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
 }
+
 .category-btn span {
     font-size: 50px;
     transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
@@ -290,7 +295,7 @@ main {
 .category-btn:hover {
     transform: translateY(-8px) rotateX(8deg) rotateY(-6deg) scale(1.04);
     box-shadow:
-      0 18px 40px rgba(0, 0, 0, 0.35);
+        0 18px 40px rgba(0, 0, 0, 0.35);
 }
 
 .category-btn:hover .emoji {
@@ -309,7 +314,7 @@ main {
 .category-score {
     font-size: 30px;
     color: #222;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     padding: 4px 8px;
     border-radius: 12px;
     margin-top: 6px;
@@ -390,33 +395,44 @@ main {
     overflow: hidden;
     transform-style: preserve-3d;
     border: #000000 2px solid;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
     /* Smooth in & ut */
     transition:
-      transform 0.25s cubic-bezier(0.19, 1, 0.22, 1),
-      box-shadow 0.25s cubic-bezier(0.19, 1, 0.22, 1),
-      filter 0.25s ease-out;
-    
+        transform 0.25s cubic-bezier(0.19, 1, 0.22, 1),
+        box-shadow 0.25s cubic-bezier(0.19, 1, 0.22, 1),
+        filter 0.25s ease-out;
+
 }
 
 /* Grundfärger */
-.answer-btn:nth-child(1) { background: #fdfdfd; }
-.answer-btn:nth-child(2) { background: #fdfdfd; }
-.answer-btn:nth-child(3) { background: #fdfdfd; }
-.answer-btn:nth-child(4) { background: #fdfdfd; }
+.answer-btn:nth-child(1) {
+    background: #fdfdfd;
+}
+
+.answer-btn:nth-child(2) {
+    background: #fdfdfd;
+}
+
+.answer-btn:nth-child(3) {
+    background: #fdfdfd;
+}
+
+.answer-btn:nth-child(4) {
+    background: #fdfdfd;
+}
 
 /* Glow + liten lyft vid hover */
 .answer-btn:hover {
     transform: translateY(-3px) scale(1.02);
     box-shadow:
-      0 12px 25px rgba(0, 0, 0, 0.35);
+        0 12px 25px rgba(0, 0, 0, 0.35);
     filter: brightness(1.08);
 }
 
 /* Liten “press” vid aktivt klick */
 .answer-btn:active {
     transform: translateY(1px) scale(0.99);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* Korrekt – grön puls */
@@ -428,22 +444,50 @@ main {
 /* Fel – skak-anim */
 .answer-btn.incorrect {
     background: #ff0000 !important;
-    animation: shake-answer 0.5s cubic-bezier(.36,.07,.19,.97);
+    animation: shake-answer 0.5s cubic-bezier(.36, .07, .19, .97);
 }
 
 /* Pulse för korrekt */
 @keyframes pulse-correct {
-    0%   { transform: scale(1); box-shadow: 0 0 0 0 rgba(38, 137, 12, 0.7); }
-    60%  { transform: scale(1.04); box-shadow: 0 0 0 12px rgba(38, 137, 12, 0); }
-    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(38, 137, 12, 0); }
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(38, 137, 12, 0.7);
+    }
+
+    60% {
+        transform: scale(1.04);
+        box-shadow: 0 0 0 12px rgba(38, 137, 12, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(38, 137, 12, 0);
+    }
 }
 
 /* Shake för fel */
 @keyframes shake-answer {
-    10%, 90% { transform: translateX(-2px); }
-    20%, 80% { transform: translateX(4px); }
-    30%, 50%, 70% { transform: translateX(-6px); }
-    40%, 60% { transform: translateX(6px); }
+
+    10%,
+    90% {
+        transform: translateX(-2px);
+    }
+
+    20%,
+    80% {
+        transform: translateX(4px);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translateX(-6px);
+    }
+
+    40%,
+    60% {
+        transform: translateX(6px);
+    }
 }
 
 .answer-btn:disabled {
@@ -451,14 +495,31 @@ main {
 }
 
 @keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.1); }
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
 }
 
 @keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-10px); }
-    75% { transform: translateX(10px); }
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
 }
 
 .back-btn {
@@ -551,13 +612,13 @@ footer {
     border-radius: 8px;
     font-weight: 600;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
     transition: transform .08s ease, box-shadow .12s ease, opacity .12s;
 }
 
 #restartAllBtn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
 }
 
 #restartAllBtn:active {
@@ -566,7 +627,7 @@ footer {
 }
 
 #restartAllBtn:focus {
-    outline: 3px solid rgba(255,82,82,0.20);
+    outline: 3px solid rgba(255, 82, 82, 0.20);
     outline-offset: 2px;
 }
 
@@ -581,7 +642,11 @@ footer {
         width: 100%;
     }
 
-    .category-score { font-size: 12px; padding: 3px 6px; min-width: 40px; }
+    .category-score {
+        font-size: 12px;
+        padding: 3px 6px;
+        min-width: 40px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -610,6 +675,15 @@ footer {
         font-size: 22px;
     }
 
-    .logo { position: static; transform: none; margin: 0 auto; }
-    .nav-right .header-score { display: none; } /* valfritt: dölj poäng på små skärmar */
+    .logo {
+        position: static;
+        transform: none;
+        margin: 0 auto;
+    }
+
+    .nav-right .header-score {
+        display: none;
+    }
+
+    /* valfritt: dölj poäng på små skärmar */
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
 </head>
+
 <body>
     <!-- HEADER -->
     <header>
@@ -16,6 +18,7 @@
             <div class="logo">QUIZY</div>
 
             <nav class="nav-right">
+                <a href="/Quizy/aboutUs.html" class="nav-link" onclick="openAbout(); return false;">Om oss</a>
                 
                 <div class="dropdown">
                     <a href="#" class="nav-link" onclick="openAbout(); return false;">Fler spel</a>
@@ -30,13 +33,13 @@
 
     <!-- MAIN CONTENT -->
     <main>
-        
+
         <div class="content-card">
             <!-- HOME SECTION -->
-                <div class="header-score" title="Totalt poäng">
-                   🏆 <span id="totalScoreHeader"> Dina poäng:0</span>
-                    <button id="restartAllBtnHeader" class="small-btn" title="Återställ poäng">Återställ</button>
-                </div>
+            <div class="header-score" title="Totalt poäng">
+                🏆 <span id="totalScoreHeader"> Dina poäng:0</span>
+                <button id="restartAllBtnHeader" class="small-btn" title="Återställ poäng">Återställ</button>
+            </div>
             <div id="homeSection">
                 <div class="welcome-text">
                     <h2>Välkommen till Quizy!</h2>
@@ -117,4 +120,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
