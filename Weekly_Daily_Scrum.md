@@ -125,3 +125,33 @@
 
 ### Action Items
 - Fortsätta med färgkombinationer, quizfrågor, "om oss"-sida och README-dokumentation.
+
+  ---
+
+## Dag 5 – 2025-12-19
+
+**Närvarande:** Alen, Vanessa, Samuel, Aysel  
+**Frånvarande:** Sinan  
+**Sekreterare:** Aysel Persson  
+
+### Individuella Uppdateringar
+- **Alen Karamles**  
+  - Vad gjorde jag sedan senaste Daily Scrum? Fortsatte med kategoribild i quiz och testade lösningar  
+  - Vad ska jag göra fram till nästa Daily Scrum? Implementera vald lösning  
+  - Blockerare: Delvis löst  
+
+- **Vanessa Thahlin**  
+  - Vad gjorde jag sedan senaste Daily Scrum? Valde färgtema och quizkort-design  
+  - Vad ska jag göra fram till nästa Daily Scrum? Applicera designen i frontend  
+  - Blockerare: Inga  
+
+- **Samuel Lindberg**  
+  - Vad gjorde jag sedan senaste Daily Scrum? Påbörjade "Om oss"-sidan  
+  - Vad ska jag göra fram till nästa Daily Scrum? Färdigställa sidan  
+  - Blockerare: Inga  
+
+- **Aysel Persson**  
+  - Vad gjorde jag sedan senaste Daily Scrum? Skrev README med sprintinformation  
+  - Vad ska jag göra fram till nästa Daily Scrum? Slutlig dokumentationsgenomgång  
+  - Blockerare: Inga  
+
