@@ -15,14 +15,18 @@
     <!-- HEADER -->
     <header>
         <div class="header-content">
-            <nav class="nav-left">
-                <a href="#" class="nav-link" onclick="goHome(); return false;">Home</a>
-            </nav>
-
             <div class="logo">QUIZY</div>
 
             <nav class="nav-right">
                 <a href="/Quizy/aboutUs.html" class="nav-link" onclick="openAbout(); return false;">Om oss</a>
+                
+                <div class="dropdown">
+                    <a href="#" class="nav-link" onclick="openAbout(); return false;">Fler spel</a>
+                    <div class="content">
+                        <a href="#" >Frågesport</a>
+                        <a href="#" >Färgspel</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -62,12 +66,12 @@
                         <span>Historia</span>
                         <div class="category-score" id="score-historia">0</div>
                     </button>
-                    <button class="category-btn" onclick="startQuiz('Städer')" data-cat="städer">
+                    <button class="category-btn" onclick="startQuiz('städer')" data-cat="städer">
                         <span class="emoji">🏙️</span>
                         <span>Städer</span>
                         <div class="category-score" id="score-stader">0</div>
                     </button>
-                    <button class="category-btn" onclick="startQuiz('Funfacts')" data-cat="funfacts">
+                    <button class="category-btn" onclick="startQuiz('funfacts')" data-cat="funfacts">
                         <span class="emoji">💡</span>
                         <span>Fun facts</span>
                         <div class="category-score" id="score-funfacts">0</div>
@@ -79,6 +83,10 @@
             <div id="quizSection" class="quiz-section">
                 <div class="question-header">
                     <div class="question-number">Fråga <span id="questionNumber">1</span>/20</div>
+                    <div class="category-title" id="categoryTitle">
+                    <span class="category-emoji" id="categoryEmoji"></span>
+                    <span id="categoryName"></span>
+                    </div>
                     <div class="question-text" id="questionText"></div>
                 </div>
                 <div class="answers" id="answersContainer"></div>
